@@ -1,0 +1,333 @@
+:root {
+    --central-primary: #003366;      /* Bleu CENTRAL+ */
+    --central-secondary: #00a8e8;    /* Bleu clair CENTRAL+ */
+    --central-accent: #4A90E2;       /* Bleu accent */
+    --central-dark: #002244;        /* Bleu foncé */
+    --central-light: #E3F2FD;        /* Bleu très clair */
+    --central-text: #2E2E2E;
+    --central-text-light: #666;
+    --central-bg: #F8F9FA;
+    --central-white: #FFFFFF;
+    --central-shadow: rgba(0, 51, 102, 0.1);
+}
+
+/* Override Bootstrap colors with CENTRAL+ colors */
+.text-primary {
+    color: var(--central-primary) !important;
+}
+
+.text-secondary {
+    color: var(--central-secondary) !important;
+}
+
+.btn-primary {
+    background-color: var(--central-primary) !important;
+    border-color: var(--central-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--central-dark) !important;
+    border-color: var(--central-dark) !important;
+}
+
+.bg-primary {
+    background-color: var(--central-primary) !important;
+}
+
+.border-primary {
+    border-color: var(--central-primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: var(--central-primary);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title .text-primary {
+    color: white !important;
+}
+
+.hero-title .text-secondary {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Override alert colors */
+.alert-info {
+    background-color: var(--central-light) !important;
+    border-color: var(--central-secondary) !important;
+    color: var(--central-dark) !important;
+}
+
+.alert-success {
+    background-color: #d4edda !important;
+    border-color: var(--central-secondary) !important;
+    color: var(--central-dark) !important;
+}
+
+/* Override form control focus */
+.form-control:focus {
+    border-color: var(--central-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25) !important;
+}
+
+.form-select:focus {
+    border-color: var(--central-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25) !important;
+}
+
+/* Override link colors */
+a {
+    color: var(--central-primary) !important;
+}
+
+a:hover {
+    color: var(--central-dark) !important;
+}
+
+/* Override navbar colors if any */
+.navbar-brand {
+    color: var(--central-primary) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--central-text) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--central-primary) !important;
+}
+
+/* Payment Modal Styles */
+.payment-method {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-method:hover {
+    border-color: var(--central-secondary);
+    background: var(--central-light);
+}
+
+.payment-method.selected {
+    border-color: var(--central-primary);
+    background: var(--central-light);
+}
+
+.payment-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--central-primary);
+}
+
+.payment-form {
+    margin-top: 1rem;
+}
+
+/* Orange Money Forms */
+.orange-money-form {
+    background: #fff3e0;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid #ffb74d;
+}
+
+.orange-money-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.orange-money-logo {
+    width: 60px;
+    height: 60px;
+    background: #ff9800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Airtel Money Forms */
+.airtel-money-form {
+    background: #fce4ec;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid #f48fb1;
+}
+
+.airtel-money-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.airtel-money-logo {
+    width: 60px;
+    height: 60px;
+    background: #e91e63;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* M-Pesa Forms */
+.mpesa-form {
+    background: #e8f5e8;
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid #81c784;
+}
+
+.mpesa-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.mpesa-logo {
+    width: 60px;
+    height: 60px;
+    background: #4caf50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Card Receipt */
+.card-receipt {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-logo {
+    width: 50px;
+    height: 50px;
+    background: var(--central-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.receipt-details {
+    border-top: 1px solid #e9ecef;
+    padding-top: 1rem;
+}
+
+/* Pricing Section */
+.pricing-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    height: 100%;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.pricing-card.featured {
+    border: 3px solid var(--central-primary);
+    transform: scale(1.05);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--central-secondary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.plan-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--central-primary);
+    margin-bottom: 1rem;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--central-primary);
+    margin-bottom: 0.5rem;
+}
+
+.plan-description {
+    color: var(--central-text-light);
+    font-size: 0.9rem;
+}
+
+.pricing-features {
+    margin-bottom: 2rem;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pricing-footer {
+    text-align: center;
+}
+
+.yearly-savings {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.pricing-info {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}

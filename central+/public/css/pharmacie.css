@@ -1,0 +1,101 @@
+:root {
+    --central-primary: #003366;      /* Bleu CENTRAL+ */
+    --central-secondary: #00a8e8;    /* Bleu clair CENTRAL+ */
+    --central-accent: #4A90E2;       /* Bleu accent */
+    --central-dark: #002244;        /* Bleu foncé */
+    --central-light: #E3F2FD;        /* Bleu très clair */
+    --central-text: #2E2E2E;
+    --central-text-light: #666;
+    --central-bg: #F8F9FA;
+    --central-white: #FFFFFF;
+    --central-shadow: rgba(0, 51, 102, 0.1);
+}
+
+/* Override Bootstrap colors with CENTRAL+ colors */
+.text-primary {
+    color: var(--central-primary) !important;
+}
+
+.text-secondary {
+    color: var(--central-secondary) !important;
+}
+
+.btn-primary {
+    background-color: var(--central-primary) !important;
+    border-color: var(--central-primary) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--central-dark) !important;
+    border-color: var(--central-dark) !important;
+}
+
+.bg-primary {
+    background-color: var(--central-primary) !important;
+}
+
+.border-primary {
+    border-color: var(--central-primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--central-primary) 0%, var(--central-secondary) 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title .text-primary {
+    color: white !important;
+}
+
+.hero-title .text-secondary {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Override alert colors */
+.alert-info {
+    background-color: var(--central-light) !important;
+    border-color: var(--central-secondary) !important;
+    color: var(--central-dark) !important;
+}
+
+.alert-success {
+    background-color: #d4edda !important;
+    border-color: var(--central-secondary) !important;
+    color: var(--central-dark) !important;
+}
+
+/* Override form control focus */
+.form-control:focus {
+    border-color: var(--central-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25) !important;
+}
+
+.form-select:focus {
+    border-color: var(--central-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(0, 51, 102, 0.25) !important;
+}
+
+/* Override link colors */
+a {
+    color: var(--central-primary) !important;
+}
+
+a:hover {
+    color: var(--central-dark) !important;
+}
+
+/* Override navbar colors if any */
+.navbar-brand {
+    color: var(--central-primary) !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--central-text) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--central-primary) !important;
+}
